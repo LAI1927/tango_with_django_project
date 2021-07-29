@@ -16,10 +16,8 @@ def index(request):
     context_dict = {}
     context_dict = {'boldmessage': 'Crunchy, creamy, cookie, candy, cupcake!'}
     context_dict['categories'] = category_list
-
     context_dict['pages'] = page_list
     context_dict['extra'] = 'From the model solution on GitHub'
-
 
     # Render the response and send it back!
     return render(request, 'rango/index.html', context=context_dict)
